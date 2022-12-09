@@ -45,12 +45,12 @@
     }
     &__des {
         font-weight: bold;
-        font-size: 65px;
+        font-size: 76px;
         font-family: var(--secondary-font);
     }
     &__text {
         font-weight: 600;
-        font-size: 17px;
+        font-size: 18px;
         font-family: var(--secondary-font);
     }
     &__text-1 {
@@ -63,13 +63,16 @@
     }
     @media (max-width: 1180px) {
         &__des {
-            font-size: 50px;
+            font-size: 60px;
         }
         &__text {
-            font-size: 16px;
+            font-size: 15px;
         }
         &__detail-2 {
-            line-height: 41px;
+            line-height: 36px;
+        }
+        &__detail {
+            gap: 10px;
         }
     }
     @media (max-width: 820px) {
@@ -78,13 +81,10 @@
             padding: 0 10px;
         }
         &__des {
-            font-size: 38px;
+            font-size: 50px;
         }
         &__text {
             font-size: 14px;
-        }
-        &__detail {
-            gap: 10px;
         }
         &__detail-2 {
             line-height: 32px;
