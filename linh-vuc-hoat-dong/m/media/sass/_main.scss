@@ -1,0 +1,59 @@
+.screen1 {
+    background: url(../images/page1-bg.jpg) center 0 no-repeat;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    .container {
+        max-width: 428px;
+    }
+    &__box {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+    &__title {
+        font-size: 17px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+    }
+    &__des {
+        font-weight: 400;
+        text-transform: uppercase;
+        color: white;
+        font-size: 13px;
+    }
+}
+.screen2 {
+    padding: 30px 0;
+    position: relative;
+    .container {
+        max-width: 428px;
+    }
+    &__item {
+        width: 100%;
+        margin-top: 30px;
+    }
+    &__title {
+        color: #2386c7;
+        text-align: center;
+        font-weight: bold;
+        font-size: 17px;
+    }
+    &__des {
+        font-size: 14px;
+    }
+    &__bot {
+        margin-top: 20px;
+    }
+    &__more {
+        text-align: center;
+        margin-top: 20px;
+        a {
+            padding: 8px 30px;
+            border: 1px solid #2386c7;
+            border-radius: 20px;
+            color: #2386c7;
+        }
+    }
+}

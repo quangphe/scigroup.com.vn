@@ -1,0 +1,197 @@
+.history_sci_1_0_0 {
+  padding: 20px 0;
+}
+.history_sci_1_0_0__content {
+  font-size: 23px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-left: 3px solid red;
+  padding: 0 8px;
+}
+.history_sci_1_0_0__box {
+  position: relative;
+}
+.history_sci_1_0_0__list {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  position: relative;
+  padding: 20px 0;
+}
+.history_sci_1_0_0__item {
+  width: 26%;
+  text-align: center;
+}
+.history_sci_1_0_0__img img {
+  width: 100%;
+  height: auto;
+}
+.history_sci_1_0_0__line {
+  width: 3px;
+  background-color: #2386c7;
+  height: 80px;
+  margin: 0 auto;
+}
+.history_sci_1_0_0__number {
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  width: 88px;
+  height: 85px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.history_sci_1_0_0__since {
+  width: 70%;
+  margin: 10px auto 0;
+}
+.history_sci_1_0_0__line2 {
+  position: absolute;
+  bottom: 180px;
+}
+.history_sci_1_0_0__line2 img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 1180px) {
+  .history_sci_1_0_0__content {
+    font-size: 21px;
+  }
+  .history_sci_1_0_0__since {
+    width: 75%;
+  }
+  .history_sci_1_0_0__line {
+    height: 70px;
+  }
+}
+@media (max-width: 912px) {
+  .history_sci_1_0_0__since {
+    font-size: 14px;
+  }
+  .history_sci_1_0_0__line2 {
+    bottom: 170px;
+  }
+}
+@media (max-width: 820px) {
+  .history_sci_1_0_0__content {
+    font-size: 19px;
+  }
+  .history_sci_1_0_0__line {
+    height: 55px;
+  }
+  .history_sci_1_0_0__line2 {
+    bottom: 165px;
+  }
+}
+@media (max-width: 767px) {
+  .history_sci_1_0_0__list {
+    flex-wrap: wrap;
+  }
+  .history_sci_1_0_0__item {
+    width: 100%;
+  }
+  .history_sci_1_0_0__line2 {
+    display: none;
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeInUp.loaded {
+  -webkit-animation: fadeInUp 1.5s;
+          animation: fadeInUp 1.5s;
+}
+
+.fadeInLeft.loaded {
+  -webkit-animation: fadeInLeft 1.5s;
+          animation: fadeInLeft 1.5s;
+}
+
+.fadeInDown.loaded {
+  -webkit-animation: fadeInDown 1.5s;
+          animation: fadeInDown 1.5s;
+}
+
+.fadeInRight.loaded {
+  -webkit-animation: fadeInRight 1.5s;
+          animation: fadeInRight 1.5s;
+}/*# sourceMappingURL=history_sci_1_0_0.css.map */

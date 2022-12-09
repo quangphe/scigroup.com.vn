@@ -1,0 +1,112 @@
+.newList_sci_1_0_0 {
+  margin-top: 20px;
+}
+.newList_sci_1_0_0__title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2386c7;
+  text-align: left;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #2386c7;
+  margin: 0;
+}
+.newList_sci_1_0_0__item {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.newList_sci_1_0_0__pic {
+  width: 40%;
+  position: relative;
+  overflow: hidden;
+}
+.newList_sci_1_0_0__pic img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: all 0.2s linear;
+}
+.newList_sci_1_0_0__pic img:hover {
+  transform: scale(1.05);
+}
+.newList_sci_1_0_0__note {
+  color: #fff;
+  font-weight: 500;
+  padding: 10px;
+  background: #2386c7;
+  position: absolute;
+  bottom: 0;
+}
+.newList_sci_1_0_0__detail {
+  width: 60%;
+  padding-right: 20px;
+}
+.newList_sci_1_0_0__text {
+  font-weight: 600;
+  text-align: justify;
+  color: #2386c7;
+  transition: all 0.2s linear;
+  font-size: 15px;
+  margin: 0;
+}
+.newList_sci_1_0_0__text:hover {
+  color: #2386c7;
+}
+.newList_sci_1_0_0__time {
+  position: absolute;
+  right: 15px;
+  bottom: 5px;
+}
+.newList_sci_1_0_0__des {
+  font-size: 14px;
+  padding: 10px 0;
+}
+@media (max-width: 1180px) {
+  .newList_sci_1_0_0__title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .newList_sci_1_0_0__item {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .newList_sci_1_0_0__pic {
+    width: 100%;
+  }
+  .newList_sci_1_0_0__detail {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .newList_sci_1_0_0__text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 375px) {
+  .newList_sci_1_0_0__title {
+    font-size: 16px;
+  }
+  .newList_sci_1_0_0__text {
+    font-size: 14px;
+  }
+  .newList_sci_1_0_0__des {
+    font-size: 13px;
+  }
+  .newList_sci_1_0_0__note {
+    font-size: 13px;
+    padding: 7px;
+  }
+}
+@media (max-width: 320px) {
+  .newList_sci_1_0_0__title {
+    font-size: 16px;
+  }
+  .newList_sci_1_0_0__text {
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=newList_sci_1_0_0.css.map */

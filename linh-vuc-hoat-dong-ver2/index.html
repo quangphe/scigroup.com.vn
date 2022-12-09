@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lĩnh vực hoạt động</title>
+    <link rel="stylesheet" href="media/sass/style.css">
+    <link rel="stylesheet" href="https://huudinh.github.io/media/css/style-min.css">
+</head>
+
+<body>
+    <section class="screen1 load">
+        <div class="container">
+            <div class="screen1__title">
+                <p class="fadeInUp load">LĨNH VỰC HOẠT ĐỘNG</p>
+                <span class="fadeInDown load">Thành lập tháng 11/2011 với tầm nhìn trở thành Tập đoàn đầu tư dẫn đầu
+                    trong lĩnh vực dịch vụ Thẩm
+                    mỹ, Nha khoa và Y tế chuyên khoa tại Việt Nam, SCI Group đang từng bước thực hiện sứ mệnh đem lại
+                    trải nghiệm tốt nhất cho nhân viên & khách hàng trên hành trình phát triển của mình.</span>
+            </div>
+        </div>
+    </section>
+    <section class="screen2 load">
+        <div class="screen2__item">
+            <div class="screen2__left mr-90">
+                <div class="screen2__box fadeInLeft load">
+                    <img width="206" height="161" src="media/images/sevice-01.png" alt="">
+                    <div class="screen2__detail">
+                        <p>PHẪU THUẬT THẨM MỸ</p>
+                        <span>Dẫn đầu lĩnh vực đầu tư Thẩm mỹ - Chăm sóc sắc đẹp với hệ thống 03 Bệnh viện và 10 cơ sở
+                            hiện đại trên toàn quốc, cung cấp hơn 60 dịch vụ thẩm mỹ tiêu chuẩn quốc tế.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="screen2__right">
+                <img width="1340" height="816" src="media/images/service-pic1.jpg" alt="">
+            </div>
+        </div>
+        <div class="screen2__item screen2__reverse">
+            <div class="screen2__left ml-90">
+                <div class="screen2__box fadeInRight load">
+                    <img width="206" height="161" src="media/images/sevice-02.png" alt="">
+                    <div class="screen2__detail">
+                        <p>ĐIỀU TRỊ - CHĂM SÓC DA</p>
+                        <span>Nâng tầm giá trị của Tập đoàn trong lĩnh vực Điều trị - Chăm sóc da với 13 phòng Spa -
+                            Laser - Trẻ hóa công nghệ cao.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="screen2__right">
+                <img width="1340" height="816" src="media/images/service-pic2.jpg" alt="">
+            </div>
+        </div>
+        <div class="screen2__item">
+            <div class="screen2__left mr-90">
+                <div class="screen2__box fadeInLeft load">
+                    <img width="206" height="161" src="media/images/sevice-03.png" alt="">
+                    <div class="screen2__detail">
+                        <p>NHA KHOA</p>
+                        <span>Phát triển vị thế thông qua hệ thống 01 Bệnh viện Răng-Hàm-Mặt thẩm mỹ và 15 cơ sở trên
+                            khắp các tỉnh thành thuộc "Top 5 nha khoa tốt nhất tại Việt Nam".</span>
+                    </div>
+                </div>
+            </div>
+            <div class="screen2__right">
+                <img width="1340" height="816" src="media/images/service-pic3.jpg" alt="">
+            </div>
+        </div>
+        <div class="screen2__item screen2__reverse">
+            <div class="screen2__left ml-90">
+                <div class="screen2__box fadeInRight load">
+                    <img width="206" height="161" src="media/images/sevice-04.png" alt="">
+                    <div class="screen2__detail">
+                        <p>Y TẾ CHUYÊN KHOA</p>
+                        <span>Khẳng định chất lượng & uy tín khi đầu tư vào ngành dịch vụ Y tế chuyên khoa với 01 Bệnh
+                            viện Đa khoa đáp ứng nhu cầu thăm khám ngày càng cao của khách hàng.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="screen2__right">
+                <img width="1340" height="816" src="media/images/service-pic4.jpg" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    document.addEventListener("scroll", function () {
+        myLazy('img.lazy', 'src');
+        myLazy('source.lazy', 'srcset');
+        myLazy('.lazy-bg', 'img-bg');
+        myLazy('.load', 'loaded');
+        onScroll('.header_1_1_0__list a', 'section', 'active');
+
+    });
+    scrollClick('.header_1_1_0__list a, a[href="#pageReg"]');
+    LazyShowScreen('img.lazy', 'src')
+    LazyShowScreen('.load', 'loaded')
+
+    // Lazy load
+    function myLazy(sec, attr) {
+        const section_loads = document.querySelectorAll(sec);
+        let winTop = window.innerHeight;
+
+        for (let i = 0; i < section_loads.length; i++) {
+            let pos_top = section_loads[i].getBoundingClientRect().top;
+            let pos_bottom = section_loads[i].getBoundingClientRect().bottom;
+            let delay = section_loads[i].getAttribute('delay-time');
+            if (pos_top <= winTop && pos_bottom >= 0) {
+                switch (attr) {
+                    case 'src':
+                        section_loads[i].src = section_loads[i].dataset.src;
+                        section_loads[i].classList.remove('lazy');
+                        break;
+                    case 'srcset':
+                        section_loads[i].srcset = section_loads[i].dataset.srcset;
+                        section_loads[i].classList.remove('lazy');
+                        break;
+                    case 'img-bg':
+                        section_loads[i].classList.remove('lazy-bg');
+                        section_loads[i].classList.add('img-bg');
+                        break;
+                    case 'loaded':
+                        setTimeout(() => {
+                            section_loads[i].classList.remove('load');
+                            section_loads[i].classList.add('loaded');
+                        }, delay)
+                        break;
+                    case 'slide':
+                        section_loads[i].classList.add('slide');
+                        break;
+                    default:
+                        console.log(`Sorry, we are out of ${attr}.`);
+                }
+
+            }
+        }
+
+    }
+
+    function LazyShowScreen(sec, attr) {
+        const section_loads = document.querySelectorAll(sec);
+        let win_height = screen.height;
+        for (let i = 0; i < section_loads.length; i++) {
+            let delay = section_loads[i].getAttribute('delay-time');
+
+            if (section_loads[i].getBoundingClientRect().top < win_height) {
+                switch (attr) {
+                    case 'loaded':
+                        setTimeout(() => {
+                            section_loads[i].classList.add('loaded');
+                        }, delay)
+                        break;
+                    case 'src':
+                        section_loads[i].src = section_loads[i].dataset.src;
+                        section_loads[i].classList.remove('lazy');
+                        break;
+                    case 'srcset':
+                        section_loads[i].srcset = section_loads[i].dataset.srcset;
+                        section_loads[i].classList.remove('lazy');
+                        break;
+                    case 'img-bg':
+                        section_loads[i].classList.remove('lazy-bg');
+                        section_loads[i].classList.add('img-bg');
+                        break;
+                    case 'slide':
+                        section_loads[i].classList.remove('slide');
+                        section_loads[i].classList.add('slide');
+                        break;
+                    default:
+                        console.log(`Sorry, we are out of ${attr}.`);
+                }
+            }
+        }
+    }
+</script>
+
+
+</html>

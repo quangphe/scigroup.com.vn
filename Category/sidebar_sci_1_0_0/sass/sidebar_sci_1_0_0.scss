@@ -1,0 +1,98 @@
+.sidebar_sci_1_0_0 {
+    margin: 40px 0;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    &__header {
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 2px solid #2386c7;
+        margin-bottom: 15px;
+        color: #2386c7;
+        text-transform: uppercase;
+    }
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        border-bottom: 1px solid #d9d9d9;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__inputGroup {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        label {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        input {
+            font-size: 14px;
+            padding: 5px 10px;
+            border: 1px solid #cbcbcb;
+        }
+    }
+    &__sub {
+        text-align: center;
+        font-size: 13px;
+        margin-top: 5px;
+        color: #838383;
+    }
+    &__btn {
+        margin-top: 15px;
+        button {
+            width: 100%;
+            font-size: 16px;
+            color: #ffffff;
+            background: #ee4b27;
+            border: none;
+            padding: 7px 10px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+}
+
+.modal {
+    .modal-title {
+        font-weight: bold;
+    }
+    .modal-body {
+        p {
+            font-size: 16px;
+        }
+    }
+}
+.success {
+    .modal-box {
+        max-width: 350px;
+    }
+    .modal-header {
+        background: rgb(35, 134, 199);
+    }
+    .modal-title {
+        text-align: center;
+    }
+    .modal-body {
+        text-align: center;
+    }
+    .close {
+        padding: 5px 10px;
+        background: rgb(35, 134, 199);
+        display: inline-block;
+        min-width: 120px;
+        border-radius: 5px;
+        cursor: pointer;
+        p {
+            margin: 0;
+            color: white;
+        }
+    }
+}

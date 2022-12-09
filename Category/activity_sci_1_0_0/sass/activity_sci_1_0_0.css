@@ -1,0 +1,242 @@
+.activity_sci_1_0_0 {
+  padding: 40px 0 0 0;
+}
+.activity_sci_1_0_0__title {
+  margin-bottom: 20px;
+}
+.activity_sci_1_0_0__title p {
+  font-size: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  color: #2386c7;
+}
+.activity_sci_1_0_0__title span {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+}
+.activity_sci_1_0_0__title {
+  -webkit-animation: bounceInDown 1.5s;
+          animation: bounceInDown 1.5s;
+}
+.activity_sci_1_0_0__item {
+  display: flex;
+  align-items: center;
+}
+.activity_sci_1_0_0__left {
+  background-color: white;
+  z-index: 1;
+  width: 35%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.activity_sci_1_0_0 .mr-90 {
+  margin-right: -90px;
+}
+.activity_sci_1_0_0 .ml-90 {
+  margin-left: -90px;
+}
+.activity_sci_1_0_0__right {
+  width: 70%;
+}
+.activity_sci_1_0_0__right img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.activity_sci_1_0_0__box {
+  padding: 40px;
+}
+.activity_sci_1_0_0__box img {
+  width: 35%;
+  display: block;
+  height: auto;
+}
+.activity_sci_1_0_0__detail p {
+  text-align: right;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #2386c7;
+}
+.activity_sci_1_0_0__detail span {
+  width: 70%;
+  text-align: right;
+  display: block;
+  margin-left: auto;
+  font-style: italic;
+}
+.activity_sci_1_0_0__reverse {
+  flex-direction: row-reverse;
+}
+@media (max-width: 1440px) {
+  .activity_sci_1_0_0__left {
+    width: 39%;
+  }
+}
+@media (max-width: 1024px) {
+  .activity_sci_1_0_0__box {
+    padding: 20px;
+  }
+  .activity_sci_1_0_0__detail span {
+    width: 100%;
+  }
+}
+@media (max-width: 820px) {
+  .activity_sci_1_0_0__right {
+    width: 73%;
+  }
+}
+@media (max-width: 767px) {
+  .activity_sci_1_0_0 {
+    padding: 20px 0 0 0;
+  }
+  .activity_sci_1_0_0__title p {
+    font-size: 17px;
+  }
+  .activity_sci_1_0_0__title span {
+    width: 100%;
+  }
+  .activity_sci_1_0_0__item {
+    flex-direction: column;
+  }
+  .activity_sci_1_0_0__left {
+    width: 100%;
+    margin-right: 0;
+  }
+  .activity_sci_1_0_0__right {
+    width: 100%;
+  }
+  .activity_sci_1_0_0 .mr-90 {
+    margin-right: 0px;
+  }
+  .activity_sci_1_0_0 .ml-90 {
+    margin-left: 0px;
+  }
+  .activity_sci_1_0_0__detail p {
+    font-size: 17px;
+  }
+}
+
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeInUp.loaded {
+  -webkit-animation: fadeInUp 1.5s;
+          animation: fadeInUp 1.5s;
+}
+
+.fadeInLeft.loaded {
+  -webkit-animation: fadeInLeft 1.5s;
+          animation: fadeInLeft 1.5s;
+}
+
+.fadeInDown.loaded {
+  -webkit-animation: fadeInDown 1.5s;
+          animation: fadeInDown 1.5s;
+}
+
+.fadeInRight.loaded {
+  -webkit-animation: fadeInRight 1.5s;
+          animation: fadeInRight 1.5s;
+}/*# sourceMappingURL=activity_sci_1_0_0.css.map */

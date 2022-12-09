@@ -1,0 +1,30 @@
+.author_sci_1_0_0 {
+  margin-bottom: 15px;
+}
+.author_sci_1_0_0__box {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.author_sci_1_0_0__item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.author_sci_1_0_0__item img {
+  display: block;
+}
+.author_sci_1_0_0__item p {
+  margin: 0;
+  color: #bcbcbc;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .author_sci_1_0_0__box {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .author_sci_1_0_0__item {
+    width: 100%;
+  }
+}/*# sourceMappingURL=author_sci_1_0_0.css.map */

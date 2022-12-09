@@ -1,0 +1,30 @@
+.author_sci_1_0_0 {
+    margin-bottom: 15px;
+    &__box {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        img {
+            display: block;
+        }
+        p {
+            margin: 0;
+            color: #bcbcbc;
+            font-size: 16px;
+        }
+    }
+    @media (max-width: 767px) {
+        &__box {
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        &__item {
+            width: 100%;
+        }
+    }
+}

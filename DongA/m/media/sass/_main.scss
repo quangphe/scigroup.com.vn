@@ -1,0 +1,133 @@
+.screen2 {
+  margin: 20px 0;
+  &__titleItem {
+    color: #0b7e77;
+    font-size: 20px;
+    border-bottom: 2px solid #0b7e77;
+    padding-bottom: 10px;
+  }
+  &__content {
+    font-weight: 500;
+    margin: 20px 0;
+  }
+  &__item1 {
+    width: 100%;
+  }
+  &__item2 {
+    img {
+      width: 100%;
+      margin: 0px auto;
+      display: block;
+      height: auto;
+    }
+  }
+  @media (max-width: 320px) {
+    &__content {
+      margin: 10px 0;
+      font-size: 13px;
+    }
+    &__titleItem {
+      font-size: 15px;
+    }
+  }
+}
+.screen3 {
+  background: url(../images/sc3-bg.png) 0 center;
+  height: 355px;
+  background-size: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media (max-width: 390px) {
+    background-size: 755px;
+  }
+  @media (max-width: 360px) {
+    height: 285px;
+    background-size: 675px;
+  }
+  @media (max-width: 320px) {
+    height: 275px;
+    background-size: 615px;
+  }
+}
+.screen4 {
+  margin: 30px 0;
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  &__item {
+    position: relative;
+    background: url(../images/sc4-item1.png);
+    display: flex;
+    justify-content: center;
+  }
+  &__des {
+    padding: 10px 20px;
+    color: #fff;
+  }
+
+  &__pic {
+    img {
+      width: 100%;
+      margin: 0px auto;
+      display: block;
+      height: auto;
+    }
+  }
+  &__titleMain {
+    color: #0b7e77;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  &__item1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__itemTitle {
+    background: linear-gradient(
+      180deg,
+      rgba(3, 126, 110, 0.9) 0%,
+      rgba(4, 96, 83, 0.9) 100%
+    );
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #e1ca94;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    text-transform: uppercase;
+  }
+  &__title {
+    color: #e1ca94;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .content {
+    background: linear-gradient(
+      180deg,
+      rgba(3, 126, 110, 0.9) 0%,
+      rgba(4, 96, 83, 0.9) 100%
+    );
+  }
+  @media (max-width: 320px) {
+    &__itemTitle {
+      font-size: 15px;
+    }
+    &__title {
+      font-size: 15px;
+    }
+    &__des {
+      font-size: 13px;
+    }
+  }
+}
