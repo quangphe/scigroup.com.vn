@@ -14,12 +14,12 @@
 .history_sci_1_0_0__list {
   display: flex;
   gap: 40px;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
   padding: 20px 0;
 }
 .history_sci_1_0_0__item {
-  width: 26%;
+  width: 31%;
   text-align: center;
 }
 .history_sci_1_0_0__img img {
@@ -40,10 +40,13 @@
   height: 85px;
   margin: 0 auto;
   font-weight: bold;
+  font-size: 17px;
 }
 .history_sci_1_0_0__since {
   width: 70%;
   margin: 10px auto 0;
+  font-size: 16px;
+  font-weight: 600;
 }
 .history_sci_1_0_0__line2 {
   position: absolute;

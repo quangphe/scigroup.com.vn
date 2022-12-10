@@ -8,9 +8,27 @@
     min-height: 425px;
   }
 }
+@media (max-width: 1440px) {
+  .slider_sci_1_2_0 {
+    background-size: 1440px;
+    min-height: 425px;
+  }
+}
+@media (max-width: 1280px) {
+  .slider_sci_1_2_0 {
+    background-size: 1280px;
+    min-height: 425px;
+  }
+}
 @media (max-width: 1180px) {
   .slider_sci_1_2_0 {
     background-size: 1180px;
+    min-height: 345px;
+  }
+}
+@media (max-width: 11024px) {
+  .slider_sci_1_2_0 {
+    background-size: 11024px;
     min-height: 345px;
   }
 }
