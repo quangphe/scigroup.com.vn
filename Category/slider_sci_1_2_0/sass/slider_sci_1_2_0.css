@@ -8,16 +8,16 @@
     min-height: 425px;
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1366px) {
   .slider_sci_1_2_0 {
-    background-size: 1440px;
-    min-height: 425px;
+    background-size: 1366px;
+    min-height: 403px;
   }
 }
 @media (max-width: 1280px) {
   .slider_sci_1_2_0 {
     background-size: 1280px;
-    min-height: 425px;
+    min-height: 377px;
   }
 }
 @media (max-width: 1180px) {
@@ -26,10 +26,16 @@
     min-height: 345px;
   }
 }
-@media (max-width: 11024px) {
+@media (max-width: 1024px) {
   .slider_sci_1_2_0 {
-    background-size: 11024px;
-    min-height: 345px;
+    background-size: 1024px;
+    min-height: 300px;
+  }
+}
+@media (max-width: 912px) {
+  .slider_sci_1_2_0 {
+    background-size: 912px;
+    min-height: 267px;
   }
 }
 @media (max-width: 820px) {

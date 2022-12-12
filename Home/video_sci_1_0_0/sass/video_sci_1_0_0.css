@@ -24,9 +24,12 @@
   left: calc(50% - 35px);
   top: calc(50% - 70px);
   transition: 0.3s;
+  opacity: 1;
 }
 .video_sci_1_0_0__pic:hover img {
   transform: scale(1.03);
+  filter: grayscale(0);
+  opacity: 80%;
 }
 .video_sci_1_0_0__box {
   position: relative;
