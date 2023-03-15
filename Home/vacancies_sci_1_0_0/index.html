@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vacancies_sci_1_0_0</title>
+    <link rel="stylesheet" href="https://huudinh.github.io/media/css/style-min.css">
+    <link rel="stylesheet" href="sass/vacancies_sci_1_0_0.min.css">
+</head>
+
+<body>
+    <section class="vacancies_sci_1_0_0 load">
+        <div class="container">
+            <p class="vacancies_sci_1_0_0__title fadeInUp load">Vị trí tuyển dụng</p>
+            <hr>
+            <div class="vacancies_sci_1_0_0__search fadeInDown load">
+                <div class="vacancies_sci_1_0_0__input">
+                    <input type="text" placeholder="Bạn đang tìm gì?" id="nameInput">
+                    <button>×</button>
+                </div>
+                <button class="vacancies_sci_1_0_0__button" type="button" id="getInputValue"><img width="26" height="26"
+                        src="images/header-search-white.svg" alt=""> Xác nhận</button>
+            </div>
+            <div class="vacancies_sci_1_0_0__cancel">
+            </div>
+            <div class="vacancies_sci_1_0_0__check">
+                <div class="vacancies_sci_1_0_0__left fadeInLeft load">
+                    <div class="vacancies_sci_1_0_0__watch">
+                        <button id="filterBtn" type="submit" id="">Xem với chế độ lọc</button>
+                    </div>
+                    <div class="vacancies_sci_1_0_0__list">
+                        <p class="vacancies_sci_1_0_0__heading">Phòng ban</p>
+                        <div class="vacancies_sci_1_0_0__group">
+                            <input type="radio" id="department" name="department" value="all" checked>
+                            <label for="department">Tất cả</label>
+                        </div>
+                        <div class="vacancies_sci_1_0_0__group">
+                            <input type="radio" id="department1" name="department" value="other">
+                            <label for="department1">Vị trí khác</label>
+                        </div>
+                        <div class="vacancies_sci_1_0_0__group">
+                            <input type="radio" id="department3" name="department" value="saleMarketing">
+                            <label for="department3">Giám độc Sales & Marketing</label>
+                        </div>
+                        <div class="vacancies_sci_1_0_0__group">
+                            <input type="radio" id="department4" name="department" value="design">
+                            <label for="department4">Thiết kế đồ họa</label>
+                        </div>
+                        <div class="vacancies_sci_1_0_0__group">
+                            <input type="radio" id="department5" name="department" value="service">
+                            <label for="department5">Quản trị dịch vụ</label>
+                        </div>
+                        <div class="vacancies_sci_1_0_0__group">
+                            <input type="radio" id="department6" name="department" value="advertisement">
+                            <label for="department6">Truyền thông quảng cáo</label>
+                        </div>
+                        <div class="vacancies_sci_1_0_0__group">
+                            <input type="radio" id="department7" name="department" value="hr">
+                            <label for="department7">Nhân sự</label>
+                        </div>
+                        <div class="vacancies_sci_1_0_0__group">
+                            <input type="radio" id="department8" name="department" value="it">
+                            <label for="department8">Vận hành - IT</label>
+                        </div>
+                        <p class="vacancies_sci_1_0_0__heading">Địa điểm</p>
+                        <div class="vacancies_sci_1_0_0__group">
+                            <input type="radio" id="location9" name="location" value="Ha Noi">
+                            <label for="location9">Hà nội</label>
+                        </div>
+                        <div class="vacancies_sci_1_0_0__group">
+                            <input type="radio" id="location10" name="location" value="Ho Chi Minh">
+                            <label for="location10">Thành phố Hồ Chí Minh</label>
+                        </div>
+                        <div class="vacancies_sci_1_0_0__group">
+                            <input type="radio" id="location11" name="location" value="all" checked>
+                            <label for="location11">Tất cả</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="vacancies_sci_1_0_0__right fadeInRight load">
+                    <div id="vacancies_sci_1_0_0__main"></div>
+                    <div class="vacancies_sci_1_0_0__showmore">
+                        <a>Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="js/vacancies_sci_1_0_0_data.js"></script>
+<script src="js/vacancies_sci_1_0_0.js"></script>
+
+</html>

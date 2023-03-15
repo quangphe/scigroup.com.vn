@@ -1,5 +1,5 @@
 .header_sci_1_0_0 {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -7,13 +7,16 @@
     box-shadow: 0 0 4px rgb(0 0 0 / 30%);
     z-index: 20;
     font-family: var(--primary-font);
+
     &__box {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     &__logo {
         margin: 0;
+
         img {
             display: block;
             width: 100%;
@@ -21,6 +24,7 @@
             height: auto;
         }
     }
+
     &__list {
         display: flex;
         list-style: none;
@@ -28,9 +32,11 @@
         padding: 0;
         align-items: center;
     }
+
     &__item {
         padding: 0 15px;
     }
+
     &__link {
         font-size: 17px;
         padding: 30px 0px;
@@ -39,6 +45,7 @@
         cursor: pointer;
         color: white;
     }
+
     &__btn {
         padding: 0;
         margin: 0 0 0 10px;
@@ -48,6 +55,7 @@
         cursor: pointer;
         line-height: 0px;
     }
+
     &__dropdown {
         transition: all 0.2s linear;
         display: none;
@@ -60,13 +68,16 @@
         border: 1px solid rgba(0, 0, 0, 0.15);
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
         padding: 20px;
+
         &Cate {
             width: 100%;
             margin-right: 20px;
+
             &:last-child {
                 margin-right: 0;
             }
         }
+
         &Title {
             // text-transform: uppercase;
             font-size: 14px;
@@ -75,40 +86,48 @@
             font-weight: 600;
             margin-bottom: 5px;
         }
+
         ul {
             list-style: none;
             padding: 0;
             margin: 0;
             font-size: 12px;
+
             li {
                 border-bottom: 1px solid #f1f1f1;
                 padding-bottom: 8px;
                 margin-bottom: 7px;
+
                 &:hover a {
                     color: #0056a4;
                 }
             }
         }
     }
+
     &--active:hover {
         background: rgb(35 134 199);
         transition: all 0.3s linear;
     }
+
     &__item:hover {
         .header_sci_1_0_0__dropdown {
             display: flex;
         }
     }
+
     &__language {
         position: relative;
         z-index: 21;
     }
+
     &__language:hover {
         .header_sci_1_0_0__eng {
             transition: all 0.3s linear;
             display: block;
         }
     }
+
     &__vn,
     &__eng {
         padding: 5px 20px;
@@ -117,18 +136,23 @@
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         transition: all 0.3s linear;
         border-radius: 5px;
+
         a {
             color: #0574b3;
         }
     }
+
     &__vn:hover {
         background-color: #0574b3;
+
         a {
             color: white;
         }
     }
+
     &__eng:hover {
         background-color: #0574b3;
+
         a {
             color: white;
         }
@@ -138,25 +162,31 @@
         display: none;
         position: absolute;
     }
+
     &__nav {
         display: none;
     }
+
     &__logoMb {
         display: none;
     }
+
     &__btnGroup {
         display: none;
     }
+
     &__bg {
         display: none;
     }
 
     @media (max-width: 1200px) {
         padding: 10px 0;
+
         .container {
             padding-left: 0;
             padding-right: 0;
         }
+
         &__bg {
             background: rgba(0, 0, 0, 0.5);
             position: fixed;
@@ -166,14 +196,18 @@
             width: 100%;
             z-index: 10;
         }
+
         &__nav {
             display: block;
+
             img {
                 display: block;
             }
         }
+
         &__btnGroup {
             display: flex;
+
             a {
                 border: 1px solid white;
                 width: 35px;
@@ -184,6 +218,7 @@
                 border-radius: 50%;
                 margin-right: 5px;
             }
+
             button {
                 background: rgba(238, 238, 238, 0);
                 border: 1px solid white;
@@ -196,24 +231,30 @@
                 cursor: pointer;
             }
         }
+
         &__language {
             padding: 10px;
         }
+
         &__vn,
         &__eng {
             width: 120px;
         }
+
         &__link {
             padding: 10px 0 10px 15px;
         }
+
         &__logo {
             img {
                 max-width: 90px;
                 margin: 0 auto;
             }
         }
+
         &__logoMb {
             display: block;
+
             img {
                 width: 70%;
                 margin: 10px auto;
@@ -221,6 +262,7 @@
                 height: auto;
             }
         }
+
         &__list {
             // display: none;
             flex-direction: column;
@@ -236,6 +278,7 @@
             transition: all 0.3s linear;
             // transition: all 0.5s linear;
         }
+
         .show {
             transform: translateX(0);
         }
@@ -244,9 +287,11 @@
             width: 100%;
             padding: 8px 0;
         }
+
         &__btn {
             display: none;
         }
+
         &__link::after {
             content: "ˇ";
             position: absolute;
@@ -259,6 +304,7 @@
                 display: none;
                 flex-direction: column;
             }
+
             .header_sci_1_0_0__link {
                 background-color: unset;
             }
@@ -267,6 +313,7 @@
         &__item.open .header_sci_1_0_0__dropdown {
             display: block;
         }
+
         &__dropdown {
             width: 100%;
             display: none;
@@ -276,18 +323,22 @@
             border: none;
             margin: 10px 0 0;
             border-radius: 0;
+
             &Cate {
                 width: 100%;
                 padding: 10px 0 10px 15px;
                 margin: 0;
+
                 ul {
                     li {
+
                         // border-bottom: 1px  #51abff;
                         &:hover {
                             a {
                                 color: black;
                             }
                         }
+
                         a {
                             color: #0056a4;
                         }
@@ -296,11 +347,13 @@
             }
         }
     }
+
     @media (max-width: 767px) {
         .container {
             padding-right: 15px;
             padding-left: 15px;
         }
+
         &__link {
             padding: 0 15px;
         }

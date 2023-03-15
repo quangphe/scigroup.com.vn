@@ -1,107 +1,23 @@
 .slider_sci_1_0_0 {
-    background: url(../images/slider.jpg?ver=2) center 0 no-repeat;
-    min-height: 795px;
-    display: flex;
-    flex-direction: column-reverse;
-    padding-bottom: 80px;
-    font-family: var(--primary-font);
-    &__box {
-        animation: bounceInDown 2.5s;
-        width: 38%;
-        margin-left: auto;
-    }
-    &__heading {
-        width: 90%;
-        img {
-            width: 100%;
-            display: block;
-            height: auto;
-        }
-    }
-    &__title {
-        padding-top: 20px;
-        border-top: 1px solid white;
-        text-align: left;
-        width: 100%;
-        margin: 20px auto 0;
-        color: white;
-        font-weight: 600;
-        font-size: 17px;
-    }
+    background: url(../images/slider.jpg) center 0 no-repeat;
+    min-height: 870px;
+
     @media (max-width: 1440px) {
         background-size: 1440px;
-        min-height: 595px;
-        padding-bottom: 60px;
+        min-height: 650px;
     }
     @media (max-width: 1180px) {
         background-size: 1180px;
-        min-height: 485px;
-        &__box {
-            width: 42%;
-        }
-        &__heading {
-            width: 80%;
-        }
-        &__title {
-            font-size: 15px;
-        }
+        min-height: 535px;
     }
     @media (max-width: 820px) {
         background-size: 820px;
-        min-height: 330px;
-        padding-bottom: 20px;
-        &__box {
-            width: 45%;
-        }
-        &__heading {
-            width: 85%;
-        }
-        &__title {
-            font-size: 13px;
-            margin: 12px auto 0;
-            padding-top: 12px;
-        }
+        min-height: 370px;
     }
     @media (max-width: 767px) {
         background-size: cover;
-        &__box {
-            width: 100%;
-        }
-        &__heading {
-            width: 60%;
-            margin: 0 auto;
-        }
-        &__title {
-            width: 82%;
-            font-size: 12px;
-            padding-top: 10px;
-            margin: 10px auto 0;
-            text-align: center;
-        }
     }
     @media (max-width: 320px) {
         min-height: 350px;
-        &__title {
-            width: 100%;
-        }
-        
-        &__heading {
-            width: 80%;
-        }
-    }
-    @media (max-width: 280px) {
-        &__title {
-            font-size: 10px;
-        }
-    }
-}
-@keyframes bounceInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-200px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
     }
 }
